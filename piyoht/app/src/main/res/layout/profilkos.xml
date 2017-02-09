@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Cari Lokasi Lain"
+            android:id="@+id/carilagi"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/sym_action_call"
+            android:id="@+id/call"
+            android:layout_weight="1"
+            android:onClick="onClickcall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/imageView3"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.21"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="3.40"
+                    android:layout_height="200dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="176dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Fadli Kos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView2"
+                            android:textSize="30sp"
+                            android:textAlignment="textStart"
+                            android:fontFamily="casual" />
+
+                        <TextView
+                            android:text="Jln Syiah Kuala No.148 Banda aceh,Darussalam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:textSize="14sp"
+                            android:textAlignment="textStart"
+                            android:fontFamily="casual"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Alamat Dari Maps"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView34"
+                            android:fontFamily="casual"
+                            android:textAlignment="center" />
+
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/mapslbspencari"
+                            tools:context=".ProfilKos"
+                            android:name="com.google.android.gms.maps.MapFragment"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="FASILITAS                          "
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textView9"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="casual" />
+
+                        <TextView
+                            android:text="     ADA     "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView10"
+                            android:fontFamily="casual"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="TIDAK  "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView11"
+                            android:fontFamily="casual"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="KETERANGAN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView12"
+                            android:fontFamily="casual" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="AC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView13" />
+
+                        <TextView
+                            android:text="ya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView18"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView19"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Kamar Mandi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5" />
+
+                        <TextView
+                            android:text="Ya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView21"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView22"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView20"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="WIFI"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView14" />
+
+                        <TextView
+                            android:text="Ya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView25"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView24"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView23"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Lemari"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView15" />
+
+                        <TextView
+                            android:text="Ya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView28"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView27"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView26"
+                            android:textAlignment="center" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <TextView
+                            android:text="Meja Belajar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16" />
+
+                        <TextView
+                            android:text="Ya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView31"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView30"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView29"
+                            android:textAlignment="center" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.48">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/logounsyiah"
+                        android:id="@+id/imageView2"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/logounsyiah"
+                        android:id="@+id/imageView"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/logounsyiah"
+                        android:id="@+id/imageView5"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/logounsyiah"
+                        android:id="@+id/imageView4"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">piyoh Pencari</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Pilih_Kabupaten">
+
+        <item>Pilih Kabupaten atau Kota</item>
+        <item>Banda Aceh</item>
+        <item>Lhoksemawe</item>
+
+    </string-array>
+
+    <string-array name="Pilih_Kecamatan">
+        <item>Pilih Kecamatan...</item>
+        <item>Ulee Kareeng</item>
+        <item>Darussalam</item>
+
+    </string-array>
+</resources>

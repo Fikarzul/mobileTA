@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="PINDAH LOKASI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_marginBottom="11dp"
+                android:id="@+id/textView3"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_weight="0.09"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:fontFamily="casual" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.09">
+
+                <TextView
+                    android:text="Pilih Kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="46dp"
+                    android:id="@+id/textView7"
+                    android:layout_below="@+id/textView3"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="viewStart"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="casual" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pkota"
+                    android:entries="@array/Pilih_Kabupaten"
+                    android:layout_below="@+id/textView7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.09">
+
+                <TextView
+                    android:text="Pilih Kecamatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:textAlignment="viewStart"
+                    android:layout_below="@+id/pkota"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="casual" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pkecamatan"
+                    android:entries="@array/Pilih_Kecamatan"
+                    android:layout_below="@+id/textView8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.09">
+
+                <Button
+                    android:text="pindah lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cari"
+                    android:layout_alignTop="@+id/lokasi"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Lokasi Saya"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lokasi"
+                    android:layout_below="@+id/pkecamatan"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:layout_toStartOf="@+id/textView3"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
